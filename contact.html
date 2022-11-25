@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+   
+    <script src="https://use.fontawesome.com/177684acc8.js"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/d8ed727306.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+     
+</head>
+<body>
+    <div class="main_body">
+    <div>
+        <header>
+          <!-- desktop nav -->
+          <div>
+              <span class="company_name">Ajeoba</span>
+            </div>
+            
+           <nav>
+            <ul class="nav_items">
+    <li class="list"><a href="./about.html">About</a></li>
+      <li class="list"><a href="./team.html">Our Team</a></li>
+        <li class="list"><a href="./stakeholder.html">Our Stakeholders</a></li>
+          <li class="list"><a href="./contact.html">Contact Us</a></li>
+          <li class="list"><select>
+      <option value="0">Resources</option>
+      <option value="1">Economy</option>
+    </select></li>
+    </ul>   
+    </nav><!-- end for desktop nav -->
+
+            <!-- mobile Navigation Menu -->
+            <div class="hamburger_icon" onclick="toggleMobileMenu(this)"> 
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            
+            <ul class="mobile_nav">
+                <li><a href="./about.html">About</a></li>
+                  <li><a href="./team.html">Our Team</a></li>
+                    <li><a href="./stakeholder.html">Our Stakeholders</a></li>
+                      <li><a href="./contact.html">Contact Us</a></li>
+                      <li><select>
+                  <option value="0">Resources</option>
+                  <option value="1">Economy</option>
+                </select></li> 
+            </ul>
+            </div>
+
+        </header>
+        <div id="background">
+        <div id="main_contact">    
+        <div id="contact_form">
+            <h2 id="contact_title" >CONTACT FORM</h2>
+
+            <input type="text" class="form" id="name_form"placeholder="full Name" name="text" required>
+            <div id="subcontact">
+            <input type="number" class="form" id="phone_form" placeholder="Phone Number" name="number" required>
+            <input type="email" class="form" id="email_form" placeholder="Email address"   name="email" required> 
+            </div>
+            <input type="message" class="form" id="message_form" placeholder="Enter Message"   name="mail" required>
+            <button id="contact_submit">submit</button> 
+        </div><!--closing div for contact_form -->
+        
+        <div id="contact_extra">
+            <div id="head_office">
+            <div>
+                Head office<br/>
+                Wuse 2 Abuja central area 
+            </div>
+            <div style="padding-left: 20px;">
+                Contact us<br/>
+                +2348166052111
+            </div>
+            </div><!--closing div for head_office -->
+            follow us
+<div class="social_media">
+<i class="fa-brands fa-instagram"></i>
+<i class="fa-brands fa-facebook-f"></i>
+<i class="fa-brands fa-twitter"></i>
+<i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        </div><!--closing div for main_contact -->
+        </div><!--closing div for background -->
+
+    </div>
+<footer>
+<div id="footer_section">
+<div id="footer_content">
+<i class="fa-solid fa-phone"></i> <a href=" tel:+234-00978689"> +234-01993-2993</a>
+<i class="fa-solid fa-envelope"></i> <a href="mailto:ajeoba@gmail.com"> ajeoba@gmail.com</a>
+<i class="fa-solid fa-location-dot"></i> No 10 Olamide streeet
+</div>
+<div id="footer_bio">
+
+<li> <b>About us</b> </li>
+<li>Our story</li>
+<li>  Careers</li>
+
+</div>
+<div id="footer_help">
+<b>Help</b>
+<a href="contact.html"> Contact</a>
+</div>
+<div>
+Ajeoba
+<div class="social_media">
+<i class="fa-brands fa-instagram"></i>
+<i class="fa-brands fa-facebook-f"></i>
+<i class="fa-brands fa-twitter"></i>
+<i class="fa-brands fa-linkedin-in"></i>
+
+
+
+</div>
+<div>
+<form action="action_page.php">
+<div class="container">
+Subscribe to our Newsletter
+</div>
+
+<div class="container" style="background-color:black">
+<input type="text" style="background-color:black" placeholder="Email address"   name="mail" required> 
+<button id="submit"style="background-color:black"><i class="fa-solid fa-arrow-pointer submit_pointer"></i> </button> 
+</div>
+<!---
+<div class="container">
+<input type="submit" value="Subscribe">
+</div>-->
+</form>
+
+
+</div>
+</div>
+</footer>
+
+    </div>
+    <script src="page.js"></script> 
+</body>
+</html>

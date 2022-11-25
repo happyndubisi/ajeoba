@@ -1,0 +1,726 @@
+
+body{ 
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+}
+
+.nav_items{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 60px ;
+}
+.list{
+    padding:0px 15px ;
+    text-decoration: none;
+}
+.nav_items a{
+    color: black;
+}
+.nav_items li{
+
+    margin-left: 15px;
+}
+.nav_items li:hover{
+    transform: scale(1.1);
+    transition: 00.3s;
+}
+
+header{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    flex: 1 0 50%;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    background-color:white;
+    text-decoration: none;
+}
+nav a{
+text-decoration: none;
+
+}
+.company_name{
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 45px;
+    height: 100%;
+    
+}
+
+.hamburger_icon{ /*mobile nav style*/
+    margin: 0;
+    display: none;
+    cursor: pointer;
+    padding-right: 20px;
+}
+.hamburger_icon div{
+    width: 35px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+    
+    transition: 0.4s;
+}
+.open .bar1{
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+.open .bar2{
+    opacity: 0;
+}
+.open .bar3{
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+.open .mobile_nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.mobile_nav{
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+    background-color: black;
+}
+.mobile_nav li{
+    padding: 5px;
+}
+.mobile_nav li:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+
+}
+@media screen and (max-width: 600px) {
+    header nav{
+        display: none;
+    }
+    .hamburger_icon{
+        display: block;
+    }
+   
+}
+#farmers{
+    padding-left: 40px;
+    padding-top: 30px;
+    width: 100%;
+    justify-items: center;
+}
+#farmers_writeup{
+    background-color: gray;
+    width:auto ;
+    height: auto;
+    max-width: 250px;
+    padding: 30px;
+
+}
+
+#farmers_pictures_section{
+    max-width: 950px;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0% 20%;
+    padding: 2% 0%;
+    
+}
+.farmers_picture,
+.picture_hidden{
+    display: none;
+}
+.picture_visible{
+    display: block;
+    animation: fadeVisibility 0.5s;
+}
+#farmers_pictures_section
+    .farmers_picture img {
+    width: 100%;
+    max-width: 700px;
+    max-height: 700px;
+    
+}
+#farmers_pictures_section #buttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    
+    
+}
+  #button{
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    border: 0;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+#prev-button{
+    padding: 10px;
+    margin-left:10px;
+    
+}
+#next-button{
+    padding: 10px;
+    margin-right:10px;
+}
+@keyframes fadeVisibility{
+    0%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
+    }
+    
+}
+#section1{
+        
+        display: block;
+        position: relative;
+      }
+      #section1::after{
+        content: "";
+        background-image: url(happi1.jpeg);
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size:cover;
+        opacity: 0.5;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        bottom: 0px;
+        z-index: -1;       
+       
+      }
+      #section1{
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
+        height: 100%;
+        
+      }
+.glance_box{
+    background-color: white;
+    color: black;
+    padding: 40px;
+
+}
+#ajeoba_numbers{
+    background-color: rgb(59, 141, 59);
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center; 
+}
+#glance_boxes_section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+
+}
+#scroll_up_btn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: grey;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+#scroll_up_btn :hover{
+    background-color: aqua;
+}
+footer{
+    background-color: rgb(238, 236, 236);
+    width: 100%;
+}
+#footer_bio{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#footer_bio li{
+    list-style: none;
+}
+#footer_content{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 30px;
+}
+#footer_section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+#footer_help{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.social_media{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.fa-brands {
+    padding: 5px;
+}
+form {
+    border: 4px solid #f1f1f1;
+  }
+  /*end of design for email subcribtion*/
+  /* Add some padding and a grey background color to containers 
+  .container {
+    padding: 20px;
+    background-color: #f1f1f1;
+  }*/
+  
+  /* Style the input elements and the submit button 
+  input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+ 
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
+  /*end of design for email subcribtion*/
+  #platform_content{
+    margin: 40px;
+    padding: 20px;
+    background-color: rgb(216, 216, 165);
+    border-radius: 6px;
+  }
+  #platform_flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+
+  }
+#platform_content img{
+    max-width: 200px;
+}
+#platform p{
+    text-align: center;
+}
+
+  #ajeoba_platform{
+    padding: 5px;
+    height: 250px;
+    width: 350px;
+    transform: skew(10deg);
+    background-color: white;
+
+  }
+
+  #value_proposition{
+    background-color: rgb(221, 220, 220);
+  }
+  #value_proposition_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 45px 35px;
+  }
+  #value_proposition_title{
+    padding: 20px 0;
+    text-align: center;
+    font-weight: lighter; 
+    color: green;
+  }
+  .icons{
+    
+    text-align: center;
+    padding: 10px;
+  }
+#value_chain_section{
+    background-color: aliceblue;
+}
+#our_stories_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px 130px;
+}
+#our_stories_content img{
+    max-width: 100%;
+    max-height: 500px;
+    justify-content: center;
+}
+.content{
+   padding: 6px; 
+}
+#story_last_section{
+    text-align: center;
+    padding: 5px 30px;
+}
+.submit_pointer{
+    color: white;
+}
+.title{
+    text-align: center;
+    padding: 15px 0;
+} 
+#story3_cont, #story2_cont, #story1_cont {
+    display:none ;
+}
+.story_picture{
+    max-width: 350px;
+    border: 1px solid black;
+    margin: 0px;
+
+}
+#customers_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+#customers_section{
+    background-color: rgb(112, 173, 19);
+}
+#tree_chart ul{
+    padding-top: 20px;
+    position: relative;
+}
+#tree_chart li{
+    float: left;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    padding: 20px 5px 0 5px;
+}
+#tree li::before, #tree li::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 50%;
+    width: 50%;
+    height: 45px;
+    z-index: -1;
+    border-top: 1px solid gray;
+}
+#tree_chart li::after{
+    border-left: 1px solid gray;
+    left:50%;
+    right: auto;
+}
+#tree_chart li:last-child::before, #tree_chart li:last-child::after{
+    border: 0 none;
+}
+#tree_chart li:last-child::before{
+    border-right: 1px solid blue;
+    border-radius: 0 5px 0 0;
+}
+#tree_chart li:last-child::after{
+    border-radius:  5px 0 0 0;
+}
+#tree_chart ul ul::before{
+    content: '';
+    border-left: 1px solid magenta;
+    z-index: -1;
+    height: 20px;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    width: 0;
+}
+#tree_chart li a{
+    background-color: white;
+    border: 1px solid gray;
+    text-decoration: none;
+    display: inline;
+    border-radius: 4px;
+}
+/* contact styling*/
+#contact_form{
+    max-width: 400px;
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid silver;
+    position: bottom;
+    text-align: center;
+    margin: 40px;
+    
+}
+#contact_form input{
+    background-color:rgb(242, 239, 239) ;
+    border-radius:4px ;
+    border: 1px solid rgb(242, 239, 239) ;
+    width: 100%;
+    margin: 4px;
+    padding: 4px;
+
+}
+#main_contact{
+    padding-top:200px ;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    display:flex;
+    flex-direction: row;
+    
+}
+#contact_title{
+    text-align: center;
+    padding: 6px;
+}
+#contact_form #message_form{
+    padding: 50px 0;
+    margin-left: 4px;
+    
+}
+#contact_submit{
+    background-color: rgb(84, 165, 84);
+    border-radius: 4px;
+    border: 1px solid rgb(84, 165, 84);
+    padding: 4px 50px;
+    text-align: center;
+
+
+}
+
+#subcontact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#background{
+background-image: linear-gradient(to bottom, transparent 50%, white 50%),url("happi1.jpeg");
+background-repeat: no-repeat;
+background-size: cover;
+display: table;
+width: 100%;
+
+
+}
+#head_office{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#contact_extra{
+    padding-top:200px ;
+    margin-left: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+}
+/* end of contact design*/
+
+/* Style the mobile navigation menu 
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }*/
+  
+  /* Hide the links inside the navigation menu (except for company name) 
+  .topnav #navlinks {
+    display: none;
+  }*/
+  
+  /* Style mobile navigation menu links 
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }*/
+  /* Style the hamburger menu 
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }*/
+  
+  /* Add a grey background color on mouse-over 
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }*/
+  
+  /* Style the active link (or home/logo) 
+  .active {
+    background-color: #04AA6D;
+    color: white;
+  }*/
+
+  /* design for resource*/
+  #resources_background{
+    padding: 40px 100px 400px 100px;
+    margin: 60px;
+    display: block;
+    position: relative;
+  }
+  #resources_background::after{
+    content: "";
+    background-image: url(happi1.jpeg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size:cover;
+    opacity: 0.5;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    z-index: -1;
+  }
+.reports button{
+    background-color: rgb(243, 237, 237);
+    padding: 4px;
+}
+#special_report button{
+    background-color: rgb(38, 232, 38);
+}
+.reports{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 180px;
+}
+#main_resources{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 40px;
+       
+}
+
+/* stakeholder styling*/
+#stakeholder_background{
+    padding: 40px 100px 400px 100px;
+    margin: 60px;
+    display: block;
+    position: relative;
+  }
+  #stakeholder_background::after{
+    content: "";
+    background-image: url(happi1.jpeg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size:cover;
+    opacity: 0.5;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    z-index: -1;
+  }
+.stakeholder_content{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.stakeholder_content img{
+    max-width: 200px;
+    max-height: 150px;
+}
+.stakeholder_content p{
+    padding: 0 20px;
+}
+#stakeholder_section{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#stakeholder_title{
+    text-align: center;
+}
+/* team style*/
+#team_title{
+    color: green;
+    font-weight: lighter;
+}
+#team{
+border: 2px solid silver;
+margin: 5px 80px 80px 80px ;
+}
+#team_title{
+    padding-left: 70px;
+}
+#team{
+        padding: 40px 100px 400px 100px;
+        margin: 60px;
+        display: block;
+        position: relative;
+      }
+      #team::after{
+        content: "";
+        background-image: url(happi1.jpeg);
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size:cover;
+        opacity: 0.5;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        bottom: 0px;
+        z-index: -1;
+        display: flex;
+        flex-direction: column;
+        justify-content: none;
+      }
+
+.team_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+.team_content img{
+    max-width: 200px;
+}
+.team_p{
+    max-width: 500px;
+    padding: 30px;
+    text-align: left;
+}
